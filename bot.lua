@@ -27,15 +27,15 @@ hi :)
 
 /hyper [`Hi`]
 [*I'm a api bot* ]
-[_BeatBot Team created me_]
-[[BeatBot Channel](test)][(http://telegram.me/beatbot_team)]
+[_Sbss Team created me on BeatBot Base_]
+[[Sbss Channel](test)][(http://telegram.me/Sbss_team)]
 
 *RESULT*
 
 `Hi`
 *I'm a api bot* 
-_BeatBot Team created me_
-[BeatBot Channel](http://telegram.me/beatbot_team)
+_Sbss Team created me on BeatBot Base_
+[Sbss Channel](http://telegram.me/Sbss_team)
 
 *OTHER*
 
@@ -49,6 +49,7 @@ _BeatBot Team created me_
 `/webshot url`
 
 _TNX TO USE ME :)_
+#Sbss_Team
 ]] 
 
 -------
@@ -57,7 +58,7 @@ _TNX TO USE ME :)_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {94746365}-- put your id here
+  local admins = {122774063}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
