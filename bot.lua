@@ -5,37 +5,37 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = " "--توکن بوت را درون " قرار دهید --
+local bot_api_key = "192698470:AAHhOVguTdFlMItSBd_esmc06U2aFRLQHlo"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[
 hi :)
 
-/hyper [`test`]
+/h [`test`]
 - `test`
 
-/hyper [*test*]
+/h [*test*]
 - *test*
 
-/hyper [_test_]
+/h [_test_]
 - _test_
 
-/hyper [[text](url)](url)
-- [BeatBot](BeatBot.ir)
+/h [[text](url)](url)
+- [GAmeONe](Game-ONe.ir)
 
 *EXAMPLE*
 
-/hyper [`Hi`]
+/h [`Hi`]
 [*I'm a api bot* ]
-[_BeatBot Team created me_]
-[[BeatBot Channel](test)][(http://telegram.me/beatbot_team)]
+[_Im From Coolest And Best GameNews Channel_]
+[[GameONe Channel](test)][(http://telegram.me/gameonech)]
 
 *RESULT*
 
 `Hi`
 *I'm a api bot* 
-_BeatBot Team created me_
-[BeatBot Channel](http://telegram.me/beatbot_team)
+_Im From Coolest And Best GameNews Channel_
+[GameONe Channel](http://telegram.me/gameonech)
 
 *OTHER*
 
@@ -49,6 +49,7 @@ _BeatBot Team created me_
 `/webshot url`
 
 _TNX TO USE ME :)_
+if u doesnt subscribed our channel yet make sure to subscribe it @GameoneCh or Tv channel GameoneTv with Main Admin @AmirHosein11a and Bot Creator @RyanGmorr
 ]] 
 
 -------
@@ -57,7 +58,7 @@ _TNX TO USE ME :)_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {94746365}-- put your id here
+  local admins = {52038630,101935103}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
@@ -256,14 +257,14 @@ function msg_processor(msg)
   if msg.text then return end
   
  
- elseif msg.text:match("/hyper (.*)") then
- local matches = { string.match(msg.text, "/hyper (.*)") }
+ elseif msg.text:match("/h (.*)") then
+ local matches = { string.match(msg.text, "/h (.*)") }
  local text = ''..matches[1]..''
  sendMessage(msg.chat.id, text, true, false, true)
 
 elseif msg.text:match("^/[sS]tart") or msg.text:match("^/[Hh]elp") then
  sendMessage(msg.chat.id, start, true, false, true)
-  sendMessage(msg.chat.id, [[[ربات خودتونو بسازید :)](http://telegram.me/beatbot_team)]], true, false, true)
+  sendMessage(msg.chat.id, [[[ Official Game ONe Channel @GameoneCh Make sure to Check IT Out . ]], true, false, true)
 return end
 
 end
